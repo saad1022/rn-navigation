@@ -1,7 +1,7 @@
 import  React  from 'react';
 import {Text , View , Button , ScrollView , StyleSheet} from 'react-native';
 
-import {createStackNavigator,createAppContainer} from 'react-navigation';
+import {createStackNavigator,createAppContainer,createDrawerNavigator} from 'react-navigation';
 
 
 class Home extends React.Component {
@@ -48,8 +48,8 @@ class DetailsScreen extends React.Component {
     }
 }
 
-//Navigator
-const AppStackNavigator = createStackNavigator(
+//Drawer Navigator
+const AppDrawNavigator = createDrawerNavigator(
     {
         //Path For Screens
          Home: Home,
@@ -65,7 +65,7 @@ const AppStackNavigator = createStackNavigator(
     }
 );
 
-const AppContainer = createAppContainer(AppStackNavigator);
+const AppContainer = createAppContainer(AppDrawNavigator);
 
 
 export default class App extends React.Component {

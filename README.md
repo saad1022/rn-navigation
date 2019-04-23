@@ -1,4 +1,4 @@
 Simple React Navigation Template
 
 
-Stack Navigator basics used
+Drawer Navigator basics used
